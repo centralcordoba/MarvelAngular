@@ -1,0 +1,9 @@
+<!-- <p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+    
+  </p> -->
+  <div *ngFor='let actores of allActores | async'>
+      <img src={{actores.thumbail.path}}.{{actores.thumbail.extension}}>
+  </div>
+ 
+  

@@ -1,0 +1,43 @@
+
+<!-- <div fxFill fxLayout="column" fxLayoutAlign="space-between">
+    <div fxLayout="row wrap">
+      <ng-container *ngFor="let item of datos | async | paginate:config ">
+        <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+      </ng-container>
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div> -->
+
+<div fxFill fxLayout="column" fxFlexOrder="2" fxLayoutAlign="center">
+    <div >
+      <ng-container *ngFor="let item of datos | async | paginate:config ">
+        <img (click)="getDetail(item.id)" src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}" >
+         
+    </ng-container>
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+
+    <div fxLayout='row' fxLayoutWrap class="cards">
+
+        <div fxFlex="20" class="example-card" *ngFor="let film of datosDetail">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>{{film.name}}</mat-card-title>
+              <mat-card-subtitle>{{film.description}}
+              </mat-card-subtitle>
+            </mat-card-header>
+            <!-- <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{film.poster_path}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                {{film.overview}}
+              </p>
+            </mat-card-content>     -->
+          </mat-card>
+        </div>
+      </div>
+
+    
+
+    
+
+    
+

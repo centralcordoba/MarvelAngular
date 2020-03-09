@@ -1,0 +1,39 @@
+
+
+<div fxFill fxLayout="column" fxLayoutAlign="space-between">
+    <div fxLayout="row wrap">
+      <ng-container *ngFor="let item of datos | async">
+        <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+      </ng-container>
+
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+
+    <!-- <div style="text-align:center">
+        <h4>
+          Basic Pagination
+        </h4>
+      
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of collection.data | paginate: config">
+              <th scope="row">{{item.id}}</th>
+              <td>{{item.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+      
+      </div> -->
+
+    
+
+    
+

@@ -1,0 +1,44 @@
+<!-- <p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+    
+  </p> -->
+  <!-- <div *ngFor='let actores of allActores  | async'>
+    <img src = "{{actores.thumbnail.path}}.{{actores.thumbnail.extension}}">
+  </div> -->
+
+  <mat-grid-list cols="2" rowHeight="7:1">
+    <mat-grid-tile>
+        <u>abc</u>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <u>test</u>
+    </mat-grid-tile>
+    <ng-container *ngFor="let item of allActores">
+        <mat-grid-tile>
+            <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+        </mat-grid-tile>
+        <mat-grid-tile>
+hola
+        </mat-grid-tile>
+    </ng-container>
+</mat-grid-list>
+
+  <table>
+    <thead>
+       <tr>
+          <th>#ID</th>
+          
+       </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let item of allActores | async">
+          <!-- <th>{{ item.thumbnail.path }}.{{item.thumbnail.extension}}</th> -->
+          <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+         
+       </tr> 
+    </tbody>
+ </table>
+
+ 
+ 
+  

@@ -1,0 +1,23 @@
+
+<!-- <div fxFill fxLayout="column" fxLayoutAlign="space-between">
+    <div fxLayout="row wrap">
+      <ng-container *ngFor="let item of datos | async | paginate:config ">
+        <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+      </ng-container>
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div> -->
+
+<div fxFill fxLayout="column" fxFlexOrder="2" fxLayoutAlign="center">
+    <div >
+      <ng-container *ngFor="let item of datos | async | paginate:config ">
+        <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+      </ng-container>
+      <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+
+    
+
+    
+
+    
+

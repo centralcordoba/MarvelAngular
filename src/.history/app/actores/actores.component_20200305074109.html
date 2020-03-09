@@ -1,0 +1,17 @@
+<p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+  </p>
+  <div fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column"
+      *ngFor= "let actores of allActores |  async">
+     <mat-card>
+       <img mat-card-image src ={{actores.thumbail,path}}.{{actores.thumbail.extension}} alt={{actores.name}}>
+       <mat-card-title>
+         {{actores.name}}
+       </mat-card-title>
+     </mat-card>
+        
+      </div>
+    </div>
+  </div>

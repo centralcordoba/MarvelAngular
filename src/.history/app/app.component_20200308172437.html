@@ -1,0 +1,19 @@
+
+
+<div fxFill fxLayout="column" fxLayoutAlign="space-between">
+    <div fxLayout="row wrap">
+      <ng-container *ngFor="let item of data | async">
+        <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+      </ng-container>
+
+      
+    </div>
+    <mat-paginator 
+    [length]="length"
+    [pageSize]="pageSize" 
+    [pageSizeOptions]="pageSizeOptions"
+    [showFirstLastButtons]="true">
+ </mat-paginator>
+
+    
+

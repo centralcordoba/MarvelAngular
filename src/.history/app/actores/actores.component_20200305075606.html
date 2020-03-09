@@ -1,0 +1,11 @@
+<p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+    
+  </p>
+ 
+  <div *ngFor='let actores of allActores | async'>
+    <ng-container matColumnDef="imageUrl">
+        <th mat-header-cell *matHeaderCellDef> Image Url </th>
+        <td mat-cell *matCellDef="let element"> <img [src]="actores.thumbail,path" /> </td>
+      </ng-container>
+  </div>

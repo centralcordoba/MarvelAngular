@@ -1,0 +1,19 @@
+<!-- <p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+    
+  </p> -->
+ 
+  <table mdbTable>
+    <thead>
+      <tr>
+        <th *ngFor="let head of allActores | async" scope="col">{{head.thumbail}} </th>
+      </tr>
+    </thead>
+    <!-- <tbody>
+      <tr mdbTableCol *ngFor="let el of allActores">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.thumbail}}</td>
+        
+      </tr>
+    </tbody> -->
+  </table>

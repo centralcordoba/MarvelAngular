@@ -1,0 +1,12 @@
+
+ <table>
+    <thead>
+       <tr *ngFor="let item of allActores | async">
+          <th><img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}"></th>    
+         
+          <th></th>  
+              
+       </tr>
+    </thead>
+    
+ </table> 

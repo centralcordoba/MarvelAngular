@@ -1,0 +1,31 @@
+<!-- <p *ngFor='let actores of allActores | async'>
+    {{actores | json}}
+    
+  </p> -->
+  <!-- <div *ngFor='let actores of allActores  | async'>
+    <img src = "{{actores.thumbnail.path}}.{{actores.thumbnail.extension}}">
+  </div> -->
+
+  
+    
+  <table>
+    <thead>
+       <tr *ngFor="let item of allActores | async">
+          <th>#ID</th>    
+          <th>#ID</th>  
+          <th>#ID</th>  
+              
+       </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let item of allActores | async">
+          <th>{{ item.thumbnail.path }}.{{item.thumbnail.extension}}</th>
+           <img src = "{{item.thumbnail.path}}.{{item.thumbnail.extension}}">
+          
+    </tr>  
+    </tbody>
+ </table> 
+
+ 
+ 
+  
