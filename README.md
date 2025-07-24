@@ -1,6 +1,17 @@
 # TestTableMarvel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+This project was updated to [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+
+## 🚀 Major Update: Angular 8 → Angular 18
+
+This project has been successfully upgraded from Angular 8 to Angular 18, featuring:
+
+- ✅ **Angular 18.2.12** - Latest stable version
+- ✅ **Angular Material 18** - Updated Material Design components
+- ✅ **TypeScript 5.6** - Modern TypeScript support
+- ✅ **ESLint** - Replaced TSLint with modern ESLint configuration
+- ✅ **Modern Browser Support** - Updated browserslist configuration
+- ✅ **Improved Performance** - Latest build optimizations
 
 ## Development server
 
@@ -12,16 +23,23 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Code quality
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng lint` to analyze your code with ESLint.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Migration Notes
+
+- **TSLint → ESLint**: The project now uses ESLint instead of the deprecated TSLint
+- **Dependencies**: All dependencies have been updated to their latest compatible versions
+- **Bootstrap**: Updated to Bootstrap 5.3.3
+- **Modern ES2022**: Target updated to ES2022 for better performance
